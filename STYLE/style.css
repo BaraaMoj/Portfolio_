@@ -1,0 +1,283 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* nav bar section */
+
+
+header{
+    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: darkgrey;
+
+}
+header .logo{
+    padding-left:6%;
+    margin: 4px 0;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 400;
+    color: black;
+
+}
+header nav{
+    padding-right:  6%;
+    margin: 4px 0;
+    
+
+}
+header nav a{
+   padding: 0 3px;
+   text-decoration: none;
+   font-size: 1em;
+   font-weight: 300;
+   color: black;
+}
+@media (max-width: 525px) {
+    header nav a {
+        display: none;
+    }
+}
+/* .................. */
+
+main{
+    width: 100%;
+    min-height: 100px;
+
+    
+}
+main .hello {
+    background-color: rgb(169, 169, 169 ,0.5);
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    padding-right: 7.5%;
+    background-attachment: fixed;
+}
+
+main .hello .introduction{
+    padding-left: 6%;
+    font-size: 7vh;
+    color: black;
+}
+
+main .hello .introduction h3,h2{
+    text-transform: uppercase;
+}
+
+
+main .hello .my_photoes img{
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    main .hello .my_photoes img {
+        width: 200px;
+        height: 200px;
+    }
+    main .hello .introduction h3 {
+        font-size: 32px;
+    }
+main .hello .introduction h2 {
+    font-size: 38px;
+}
+main .hello p {
+    font-size: 30px;
+}
+}
+@media (min-width: 768px) {
+    main .hello .my_photoes img {
+        width: 450px;
+        height: 450px;
+    }
+}
+/* ............... */
+
+.title{
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 800;
+    /* margin-bottom: 30px; */
+
+}
+.cards{
+    padding-bottom: 5%;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    box-shadow: 0 5px 25px rgba(1 1 1 /25%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;   
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #000000;
+    font-size: 160px;
+    text-align: center;
+}
+
+.card .info{
+    text-align: center;
+}
+
+
+/* .................
+ */
+
+ .projects{
+    background-color:rgb(169, 169, 169 ,0.5);
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5%;
+
+}
+
+.projects .content{
+    margin: 30px;
+    
+}
+
+.project-card{
+    margin-top: 30px;
+    border: 3px solid #000000;
+    min-height: 190px;
+    width: 400px;   
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.9s ease;
+    
+
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+.project-image img{
+    width:100%
+}
+
+
+.project-info{
+    padding: 16px;
+
+}
+
+.project-category{
+    font-size: 14px;
+    color: #190061;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+.more-details{
+    text-decoration: none;
+    color: #190061;
+    transition: 0.9s ease;
+
+}
+.more-details:hover{
+    transform: scale(1.1);
+}
+
+/* .................. */
+.cards-contact{
+    padding-bottom: 5%;
+}
+.cards-contact h2{
+    
+    font-size: 30px;
+}
+
+.cards-contact .icon{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.cards-contact .info H3{
+    color: #000000;
+    font-weight: 400;
+}
+.cards-contact .info p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cards-contact .info a{
+    font-size: 20px;
+    font-weight: 400;
+    color:#000000;
+    text-decoration: none;
+}
+
+.cards-contact .title {
+    text-align: center;
+}
+/* ............... */
+
+
+.footer{
+    background-color: rgb(169, 169, 169 ,0.5);
+    color: rgb(0, 0, 0);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    /* border-radius: 13px; */
+     letter-spacing: 30px;
+
+
+}
+.footer-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.social_icons_footer a{
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    
+}
+
+
